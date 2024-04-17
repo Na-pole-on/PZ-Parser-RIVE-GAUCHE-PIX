@@ -67,6 +67,38 @@
       <IsMain>false</IsMain>
       <Path>RiveGauche\RiveGauche_GetHrefFromBrand.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i18">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_NavigateToProduct.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i19">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_HaveColor.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i20">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_GetInfoFromSite.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i21">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_GetDataFromProductPage.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i22">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_HaveVolume.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i23">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_Nothing.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i24">
+      <IsMain>false</IsMain>
+      <Path>Database\Database_AddProduct.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i25">
+      <IsMain>false</IsMain>
+      <Path>Database\Database_AddAddresses.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>ReFramework_2.0</Name>

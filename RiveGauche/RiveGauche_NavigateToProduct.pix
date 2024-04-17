@@ -2,12 +2,12 @@
 <Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
   <CompilationType>CSharp</CompilationType>
   <Description>Новый скрипт без наполнения.</Description>
-  <Id>6378ac26-7d37-4352-912a-20337b400e25</Id>
+  <Id>1dfee31a-64c4-4b1e-be7a-6c03cc058828</Id>
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
       <AbstractStep z:Id="i3" i:type="ExecutedStep">
         <Childs />
-        <Id>9dd88b38-168d-411e-94b1-3c49de273a97</Id>
+        <Id>6fe5febe-7f91-4a1e-b2ce-57969eb61188</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i4">
@@ -48,7 +48,7 @@
           <PropertyValue z:Id="i9">
             <PropertyName>TabUrl</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>in_str_href</_expression>
+            <_expression>in_dict_config["SitePath"].ToString()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -83,13 +83,13 @@
       </AbstractStep>
       <AbstractStep z:Id="i13" i:type="ExecutedStep">
         <Childs />
-        <Id>965f3232-8b31-4bd8-8143-ad11803f2db6</Id>
+        <Id>d2f1275b-687d-4607-aa91-b3cab479b244</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i14">
             <PropertyName>URL</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression></_expression>
+            <_dataType>Expression</_dataType>
+            <_expression>in_str_href</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -116,7 +116,7 @@
         <_activityFullName>Activities.Web.NavigateURL</_activityFullName>
       </AbstractStep>
     </Childs>
-    <Id>357b3479-00ac-4775-a13d-6cfd0e78800a</Id>
+    <Id>674c031a-332c-44a6-a381-5ff6a787ff05</Id>
     <Parent i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
@@ -132,9 +132,9 @@
     <Parameter z:Id="i17">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>in_str_href</Name>
+      <Name>in_dict_config</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.String</TypeString>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i18">
       <DefaultValueExpression></DefaultValueExpression>
@@ -144,9 +144,9 @@
       <TypeString>Web.Core.WebBrowser</TypeString>
     </Parameter>
     <Parameter z:Id="i19">
-      <DefaultValueExpression>"D.S.&amp;DURGA"</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>in_str_brand</Name>
+      <Name>in_str_href</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
