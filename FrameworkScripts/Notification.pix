@@ -1258,33 +1258,39 @@
       <DefaultValueExpression>3</DefaultValueExpression>
       <Description>тип уведомления</Description>
       <Name>int_notifyType</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
     <Parameter z:Id="i145">
       <DefaultValueExpression></DefaultValueExpression>
       <Description>словарь с конфигом</Description>
       <Name>dict_config</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i146">
       <DefaultValueExpression>new List&lt;string&gt;{}</DefaultValueExpression>
       <Description>Коллекция вложений</Description>
       <Name>list_attaches</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i147">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>sec_mailPassword</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.Security.SecureString</TypeString>
     </Parameter>
     <Parameter z:Id="i148">
       <DefaultValueExpression>false</DefaultValueExpression>
       <Description></Description>
       <Name>bool_takeScreenshot</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
   </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
   <Version i:nil="true" />
 </Script>

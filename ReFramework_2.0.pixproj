@@ -51,6 +51,22 @@
       <IsMain>true</IsMain>
       <Path>Main.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i14">
+      <IsMain>false</IsMain>
+      <Path>Database\Database_GetInputData.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i15">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_Open.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i16">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_NavigateToBrands.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i17">
+      <IsMain>false</IsMain>
+      <Path>RiveGauche\RiveGauche_GetHrefFromBrand.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>ReFramework_2.0</Name>

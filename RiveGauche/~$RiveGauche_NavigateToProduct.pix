@@ -2,105 +2,108 @@
 <Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
   <CompilationType>CSharp</CompilationType>
   <Description>Новый скрипт без наполнения.</Description>
-  <Id>1a1f29b5-afa8-4821-95dc-0cf35eebf9d5</Id>
+  <Id>6378ac26-7d37-4352-912a-20337b400e25</Id>
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
-      <AbstractStep z:Id="i3" i:type="CommentStep">
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
         <Childs />
-        <Id>f0f99005-0dc4-4ef9-ab19-eedacb020e4c</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues />
-        <SelectedOptionId i:nil="true" />
-        <Text>Описание:
-Скрипт для получения данных транзакции из очереди
-
-Ниже представлен пример наполнения скрипта</Text>
-      </AbstractStep>
-      <AbstractStep z:Id="i4" i:type="ExecutedStep">
-        <Childs />
-        <Id>990f849f-512b-488b-8f3f-da3edf87ce62</Id>
+        <Id>9dd88b38-168d-411e-94b1-3c49de273a97</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i5">
-            <PropertyName>QueueName</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>str_queueName</_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i6">
-            <PropertyName>ID</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>str_transactionID</_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i7">
-            <PropertyName>Value</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>str_transactionItem</_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i8">
-            <PropertyName>Priority</PropertyName>
+          <PropertyValue z:Id="i4">
+            <PropertyName>ProfilePath</PropertyName>
             <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.Queues.Enums" i:type="d7p1:QueueItemPriorityForGet">No</_value>
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i9">
-            <PropertyName>Comment</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i10">
-            <PropertyName>Reference</PropertyName>
-            <_dataType>Expression</_dataType>
             <_expression></_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>URL</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i6">
+            <PropertyName>Timeout</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">10</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i7">
+            <PropertyName>LaunchArgs</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i8">
+            <PropertyName>TabHeader</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i9">
+            <PropertyName>TabUrl</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>in_str_href</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i10">
+            <PropertyName>ExactMatch</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">false</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
           <PropertyValue z:Id="i11">
-            <PropertyName>UseReferenceStartsWith</PropertyName>
+            <PropertyName>IncognitoMode</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">false</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
           <PropertyValue z:Id="i12">
-            <PropertyName>QueueItemData</PropertyName>
+            <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
+            <_expression>out_wb_rg</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>2</SelectedOptionId>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Web.LaunchChrome</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i13" i:type="ExecutedStep">
+        <Childs />
+        <Id>965f3232-8b31-4bd8-8143-ad11803f2db6</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i14">
+            <PropertyName>URL</PropertyName>
+            <_dataType>Value</_dataType>
             <_expression></_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-        </PropertyValues>
-        <SelectedOptionId i:nil="true" />
-        <EnableStatus>true</EnableStatus>
-        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-        <RetryCount>-1</RetryCount>
-        <Text>Получение транзакции из указанной очереди</Text>
-        <_activityFullName>Activities.Queues.GetElement</_activityFullName>
-      </AbstractStep>
-      <AbstractStep z:Id="i13" i:type="ExecutedStep">
-        <Childs />
-        <Id>81eb1d78-451e-4bf7-a1ad-7ae86cb48505</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i14">
-            <PropertyName>Value</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>int_transCount + 1</_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
           <PropertyValue z:Id="i15">
-            <PropertyName>To</PropertyName>
+            <PropertyName>Timeout</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">10</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i16">
+            <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>int_transCount</_expression>
+            <_expression>out_wb_rg</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -109,11 +112,11 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>Подсчет количества транзакций, которые были обработаны за запуск</Text>
-        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+        <Text></Text>
+        <_activityFullName>Activities.Web.NavigateURL</_activityFullName>
       </AbstractStep>
     </Childs>
-    <Id>853acb3f-62a4-4065-b8be-b553af477f69</Id>
+    <Id>357b3479-00ac-4775-a13d-6cfd0e78800a</Id>
     <Parent i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
@@ -123,34 +126,27 @@
     <Text></Text>
     <_activityFullName>BR.Core.Base.Container</_activityFullName>
   </Logic>
-  <Name>GetTransaction.pix</Name>
+  <Name>RiveGauche_NavigateToProduct.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i16">
-      <DefaultValueExpression></DefaultValueExpression>
-      <Description></Description>
-      <Name>str_transactionItem</Name>
-      <RunnerType>None</RunnerType>
-      <TypeString>System.String</TypeString>
-    </Parameter>
     <Parameter z:Id="i17">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>str_transactionID</Name>
+      <Name>in_str_href</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
     <Parameter z:Id="i18">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>int_transCount</Name>
+      <Name>out_wb_rg</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Int32</TypeString>
+      <TypeString>Web.Core.WebBrowser</TypeString>
     </Parameter>
     <Parameter z:Id="i19">
-      <DefaultValueExpression></DefaultValueExpression>
+      <DefaultValueExpression>"D.S.&amp;DURGA"</DefaultValueExpression>
       <Description></Description>
-      <Name>str_queueName</Name>
+      <Name>in_str_brand</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>

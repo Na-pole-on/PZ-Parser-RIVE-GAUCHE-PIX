@@ -4170,14 +4170,14 @@ STATE 5: Завершение</Text>
       <TypeString>System.Object</TypeString>
     </Parameter>
     <Parameter z:Id="i459">
-      <DefaultValueExpression>@"Ref_Processing"</DefaultValueExpression>
+      <DefaultValueExpression>@"MSJuiko_GYR"</DefaultValueExpression>
       <Description>Название очереди</Description>
       <Name>str_queueName</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
     <Parameter z:Id="i460">
-      <DefaultValueExpression>false</DefaultValueExpression>
+      <DefaultValueExpression>true</DefaultValueExpression>
       <Description>bool_useDispatcher==true, bool_usePerformer==false - робот работает в режиме создания транзакций в целевую очередь.</Description>
       <Name>bool_useDispatcher</Name>
       <RunnerType>None</RunnerType>
