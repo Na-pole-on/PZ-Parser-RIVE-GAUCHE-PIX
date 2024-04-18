@@ -72,7 +72,7 @@
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
-            <Text></Text>
+            <Text>Получение адреса </Text>
             <_activityFullName>BR.Core.Base.Assign</_activityFullName>
           </AbstractStep>
           <AbstractStep z:Id="i12" i:type="ExecutedStep">
@@ -134,7 +134,7 @@
             <EnableStatus>true</EnableStatus>
             <ExceptionHandlingMode>Default</ExceptionHandlingMode>
             <RetryCount>-1</RetryCount>
-            <Text></Text>
+            <Text>Добавить адрес</Text>
             <_activityFullName>Activities.DataBaseSQL.SqlExecuteNonQuery</_activityFullName>
           </AbstractStep>
         </Childs>

@@ -105,7 +105,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>Получение брэндов</Text>
+        <Text>Получение брендов</Text>
         <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i16" i:type="ExecutedStep">

@@ -29,7 +29,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Присвоить значение bool_IsColor</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i6" i:type="ExecutedStep">
@@ -56,7 +56,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Присвоить значение bool_IsValume</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i9" i:type="ExecutedStep">
@@ -589,9 +589,9 @@
           </PropertyValue>
           <PropertyValue z:Id="i71">
             <PropertyName>Timeout</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">10</_value>
+            <_dataType>Expression</_dataType>
+            <_expression>3</_expression>
+            <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
           <PropertyValue z:Id="i72">
@@ -606,7 +606,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Есть ли другие объемы</Text>
         <_activityFullName>Activities.Web.ElementExist</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i73" i:type="ExecutedStep">
@@ -1139,9 +1139,9 @@
           </PropertyValue>
           <PropertyValue z:Id="i135">
             <PropertyName>Timeout</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">10</_value>
+            <_dataType>Expression</_dataType>
+            <_expression>3</_expression>
+            <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
           <PropertyValue z:Id="i136">
@@ -1156,7 +1156,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Есть ли другие цвета</Text>
         <_activityFullName>Activities.Web.ElementExist</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i137" i:type="ExecutedStep">
@@ -1205,7 +1205,7 @@
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text></Text>
+                <Text>Для других цветов</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
               <AbstractStep z:Id="i145" i:type="ExecutedStep">
@@ -1226,14 +1226,14 @@
                     <_expression i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
                       <d11p1:ArgumentItem z:Id="i148">
-                        <d11p1:ArgumentName>in_bool_IsColor</d11p1:ArgumentName>
-                        <d11p1:Expression>bool_IsVolume</d11p1:Expression>
-                        <d11p1:Type>System.Boolean</d11p1:Type>
-                      </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i149">
                         <d11p1:ArgumentName>in_wb_rg</d11p1:ArgumentName>
                         <d11p1:Expression>in_wb_rg</d11p1:Expression>
                         <d11p1:Type>Web.Core.WebBrowser</d11p1:Type>
+                      </d11p1:ArgumentItem>
+                      <d11p1:ArgumentItem z:Id="i149">
+                        <d11p1:ArgumentName>in_bool_IsVolume</d11p1:ArgumentName>
+                        <d11p1:Expression>bool_IsVolume</d11p1:Expression>
+                        <d11p1:Type>System.Boolean</d11p1:Type>
                       </d11p1:ArgumentItem>
                     </_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -1250,7 +1250,7 @@
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text></Text>
+                <Text>Для других объемов</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
             </Childs>
@@ -1303,7 +1303,7 @@
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text></Text>
+                <Text>Ничего нет</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
             </Childs>
@@ -1324,7 +1324,7 @@
           <PropertyValue z:Id="i157">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>bool_IsColor &amp;&amp; bool_IsVolume</_expression>
+            <_expression>bool_IsColor | bool_IsVolume</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>

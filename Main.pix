@@ -4128,7 +4128,7 @@ STATE 5: Завершение</Text>
   </Namespaces>
   <Params>
     <Parameter z:Id="i453">
-      <DefaultValueExpression>0</DefaultValueExpression>
+      <DefaultValueExpression>10</DefaultValueExpression>
       <Description>Количество транзакций, которое должно быть обработано за один запуск. int_transNumber==0 - без ограничений</Description>
       <Name>int_transNumber</Name>
       <RunnerType>None</RunnerType>
@@ -4149,7 +4149,7 @@ STATE 5: Завершение</Text>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
     <Parameter z:Id="i456">
-      <DefaultValueExpression>1</DefaultValueExpression>
+      <DefaultValueExpression>0</DefaultValueExpression>
       <Description>Макс. кол-во попыток обработки транзакции</Description>
       <Name>int_maxTransactionRetry</Name>
       <RunnerType>None</RunnerType>
