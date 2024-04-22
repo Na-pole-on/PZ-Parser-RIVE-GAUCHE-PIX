@@ -61,36 +61,103 @@
       </AbstractStep>
       <AbstractStep z:Id="i9" i:type="ExecutedStep">
         <Childs />
-        <Id>17a7535d-cb0c-412f-bc95-975cc521ebaf</Id>
+        <Id>0878cff6-b5cd-428d-91af-300dbfe43db9</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i10">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>new List&lt;string&gt;()</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i11">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>list_cities</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Присвоить значение list_cities</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i12" i:type="ExecutedStep">
+        <Childs />
+        <Id>5a06e2cd-e626-427a-ba63-6141057056e3</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i13">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"Database\Database_GetCity.pix"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i14">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i15">
+                <d7p1:ArgumentName>out_list_cities</d7p1:ArgumentName>
+                <d7p1:Expression>list_cities</d7p1:Expression>
+                <d7p1:Type>List&lt;System.String&gt;</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i16">
+            <PropertyName>Timeout</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">0</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Получение городов</Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i17" i:type="ExecutedStep">
+        <Childs />
+        <Id>17a7535d-cb0c-412f-bc95-975cc521ebaf</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i18">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>bool_IsVolume</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i11">
+          <PropertyValue z:Id="i19">
             <PropertyName>SearchBy</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d7p1:ElementSearchBy">XPath</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i12">
+          <PropertyValue z:Id="i20">
             <PropertyName>SearchString</PropertyName>
             <_dataType>XPath</_dataType>
             <_expression i:nil="true" />
             <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i13">
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i21">
               <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
                 <d8p1:list>
-                  <d7p1:XPathNode z:Id="i14">
+                  <d7p1:XPathNode z:Id="i22">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i15">
+                        <d7p1:XPathAttribute z:Id="i23">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -98,7 +165,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i16">
+                        <d7p1:XPathAttribute z:Id="i24">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -111,11 +178,11 @@
                     <d7p1:IsEnabled>true</d7p1:IsEnabled>
                     <d7p1:Name>html</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i17">
+                  <d7p1:XPathNode z:Id="i25">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i18">
+                        <d7p1:XPathAttribute z:Id="i26">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -123,7 +190,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i19">
+                        <d7p1:XPathAttribute z:Id="i27">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -136,78 +203,10 @@
                     <d7p1:IsEnabled>true</d7p1:IsEnabled>
                     <d7p1:Name>body</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i20">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i21">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value i:nil="true" />
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i22">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'11.2.5'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>ng-version</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i23">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'display: block;'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>style</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>app-root</d7p1:Name>
-                  </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i24">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i25">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value i:nil="true" />
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i26">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>''</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>_nghost-rg-shop-ngx-c46</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i27">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'ng-star-inserted'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>class</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>layout</d7p1:Name>
-                  </d7p1:XPathNode>
                   <d7p1:XPathNode z:Id="i28">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
                         <d7p1:XPathAttribute z:Id="i29">
@@ -222,6 +221,74 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'11.2.5'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>ng-version</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i31">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'display: block;'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>style</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>app-root</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i32">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i33">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i34">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>''</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>_nghost-rg-shop-ngx-c46</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i35">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'ng-star-inserted'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>layout</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i36">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i37">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i38">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
                           <d7p1:Value>''</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_ngcontent-rg-shop-ngx-c46</d7p1:_name>
@@ -231,13 +298,13 @@
                     <d7p1:IsEnabled>false</d7p1:IsEnabled>
                     <d7p1:Name>main</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i31">
+                  <d7p1:XPathNode z:Id="i39">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i32">
+                        <d7p1:XPathAttribute z:Id="i40">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -245,7 +312,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i33">
+                        <d7p1:XPathAttribute z:Id="i41">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -253,7 +320,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_nghost-rg-shop-ngx-c84</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i34">
+                        <d7p1:XPathAttribute z:Id="i42">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -266,7 +333,7 @@
                     <d7p1:IsEnabled>false</d7p1:IsEnabled>
                     <d7p1:Name>product-page</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i35">
+                  <d7p1:XPathNode z:Id="i43">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
                       <d11p1:string>and</d11p1:string>
@@ -278,7 +345,7 @@
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i36">
+                        <d7p1:XPathAttribute z:Id="i44">
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -286,7 +353,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i37">
+                        <d7p1:XPathAttribute z:Id="i45">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -294,7 +361,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i38">
+                        <d7p1:XPathAttribute z:Id="i46">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -302,7 +369,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>itemscope</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i39">
+                        <d7p1:XPathAttribute z:Id="i47">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -310,7 +377,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>itemtype</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i40">
+                        <d7p1:XPathAttribute z:Id="i48">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -318,7 +385,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i41">
+                        <d7p1:XPathAttribute z:Id="i49">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -326,7 +393,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-id</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i42">
+                        <d7p1:XPathAttribute z:Id="i50">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -334,7 +401,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-category-id</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i43">
+                        <d7p1:XPathAttribute z:Id="i51">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -342,83 +409,13 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-vendor</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i44">
+                        <d7p1:XPathAttribute z:Id="i52">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
                           <d7p1:Value>'true'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-available</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>div</d7p1:Name>
-                  </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i45">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i46">
-                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>1</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i47">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>''</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i48">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'product-grid'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>class</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>div</d7p1:Name>
-                  </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i49">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i50">
-                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>2</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i51">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>''</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i52">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'info'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
                       </d8p1:list>
                     </d7p1:Attributes>
@@ -435,7 +432,7 @@
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>3</d7p1:Value>
+                          <d7p1:Value>1</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -451,7 +448,7 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'product-prices-actions'</d7p1:Value>
+                          <d7p1:Value>'product-grid'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -470,7 +467,7 @@
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:Value>2</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -486,7 +483,7 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'prices-variants ng-star-inserted'</d7p1:Value>
+                          <d7p1:Value>'info'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -498,15 +495,14 @@
                   <d7p1:XPathNode z:Id="i61">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
-                      <d11p1:string>and</d11p1:string>
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
                         <d7p1:XPathAttribute z:Id="i62">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value i:nil="true" />
+                          <d7p1:Value>3</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -522,11 +518,82 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'product-prices-actions'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i65">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i66">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i67">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>''</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i68">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'prices-variants ng-star-inserted'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i69">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i70">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i71">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>''</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i72">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
                           <d7p1:Value>'my-5 sm:my-0 lg:my-5 pr-0 xl:pr-80 ng-star-inserted'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i65">
+                        <d7p1:XPathAttribute z:Id="i73">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -539,13 +606,13 @@
                     <d7p1:IsEnabled>false</d7p1:IsEnabled>
                     <d7p1:Name>product-variant-selector</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i66">
+                  <d7p1:XPathNode z:Id="i74">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i67">
+                        <d7p1:XPathAttribute z:Id="i75">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -553,7 +620,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i68">
+                        <d7p1:XPathAttribute z:Id="i76">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -561,7 +628,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_ngcontent-rg-shop-ngx-c74</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i69">
+                        <d7p1:XPathAttribute z:Id="i77">
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -569,7 +636,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i70">
+                        <d7p1:XPathAttribute z:Id="i78">
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Contains</d7p1:Operator>
@@ -587,14 +654,14 @@
               <d7p1:ScreenShotBase64 i:nil="true" />
             </_xpathSettings>
           </PropertyValue>
-          <PropertyValue z:Id="i71">
+          <PropertyValue z:Id="i79">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>3</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i72">
+          <PropertyValue z:Id="i80">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>in_wb_rg</_expression>
@@ -609,38 +676,38 @@
         <Text>Есть ли другие объемы</Text>
         <_activityFullName>Activities.Web.ElementExist</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i73" i:type="ExecutedStep">
+      <AbstractStep z:Id="i81" i:type="ExecutedStep">
         <Childs />
         <Id>15d67cd4-166a-455e-b17c-975fae2734d1</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i74">
+          <PropertyValue z:Id="i82">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>bool_IsColor</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i75">
+          <PropertyValue z:Id="i83">
             <PropertyName>SearchBy</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d7p1:ElementSearchBy">XPath</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i76">
+          <PropertyValue z:Id="i84">
             <PropertyName>SearchString</PropertyName>
             <_dataType>XPath</_dataType>
             <_expression i:nil="true" />
             <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i77">
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i85">
               <d7p1:Nodes xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
                 <d8p1:list>
-                  <d7p1:XPathNode z:Id="i78">
+                  <d7p1:XPathNode z:Id="i86">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i79">
+                        <d7p1:XPathAttribute z:Id="i87">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -648,7 +715,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i80">
+                        <d7p1:XPathAttribute z:Id="i88">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -661,11 +728,11 @@
                     <d7p1:IsEnabled>true</d7p1:IsEnabled>
                     <d7p1:Name>html</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i81">
+                  <d7p1:XPathNode z:Id="i89">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i82">
+                        <d7p1:XPathAttribute z:Id="i90">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -673,7 +740,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i83">
+                        <d7p1:XPathAttribute z:Id="i91">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -686,78 +753,10 @@
                     <d7p1:IsEnabled>true</d7p1:IsEnabled>
                     <d7p1:Name>body</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i84">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i85">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value i:nil="true" />
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i86">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'11.2.5'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>ng-version</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i87">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'display: block;'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>style</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>app-root</d7p1:Name>
-                  </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i88">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i89">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value i:nil="true" />
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i90">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>''</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>_nghost-rg-shop-ngx-c46</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i91">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'ng-star-inserted'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>class</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>layout</d7p1:Name>
-                  </d7p1:XPathNode>
                   <d7p1:XPathNode z:Id="i92">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
                         <d7p1:XPathAttribute z:Id="i93">
@@ -772,6 +771,74 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'11.2.5'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>ng-version</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i95">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'display: block;'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>style</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>app-root</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i96">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i97">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i98">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>''</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>_nghost-rg-shop-ngx-c46</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i99">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'ng-star-inserted'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>layout</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i100">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i101">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i102">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
                           <d7p1:Value>''</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_ngcontent-rg-shop-ngx-c46</d7p1:_name>
@@ -781,13 +848,13 @@
                     <d7p1:IsEnabled>false</d7p1:IsEnabled>
                     <d7p1:Name>main</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i95">
+                  <d7p1:XPathNode z:Id="i103">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i96">
+                        <d7p1:XPathAttribute z:Id="i104">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -795,7 +862,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i97">
+                        <d7p1:XPathAttribute z:Id="i105">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -803,7 +870,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_nghost-rg-shop-ngx-c84</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i98">
+                        <d7p1:XPathAttribute z:Id="i106">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -816,7 +883,7 @@
                     <d7p1:IsEnabled>false</d7p1:IsEnabled>
                     <d7p1:Name>product-page</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i99">
+                  <d7p1:XPathNode z:Id="i107">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
                       <d11p1:string>and</d11p1:string>
@@ -828,7 +895,7 @@
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i100">
+                        <d7p1:XPathAttribute z:Id="i108">
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -836,7 +903,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i101">
+                        <d7p1:XPathAttribute z:Id="i109">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -844,7 +911,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i102">
+                        <d7p1:XPathAttribute z:Id="i110">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -852,7 +919,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>itemscope</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i103">
+                        <d7p1:XPathAttribute z:Id="i111">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -860,7 +927,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>itemtype</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i104">
+                        <d7p1:XPathAttribute z:Id="i112">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -868,7 +935,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i105">
+                        <d7p1:XPathAttribute z:Id="i113">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -876,7 +943,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-id</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i106">
+                        <d7p1:XPathAttribute z:Id="i114">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -884,7 +951,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-category-id</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i107">
+                        <d7p1:XPathAttribute z:Id="i115">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -892,83 +959,13 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-vendor</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i108">
+                        <d7p1:XPathAttribute z:Id="i116">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
                           <d7p1:Value>'true'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>data-item-available</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>div</d7p1:Name>
-                  </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i109">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i110">
-                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>1</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i111">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>''</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i112">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'product-grid'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>class</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                      </d8p1:list>
-                    </d7p1:Attributes>
-                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                    <d7p1:Name>div</d7p1:Name>
-                  </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i113">
-                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                      <d11p1:string>and</d11p1:string>
-                    </d7p1:AttributeOperators>
-                    <d7p1:Attributes>
-                      <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i114">
-                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>2</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name></d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i115">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>''</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
-                        </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i116">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
-                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
-                          <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'info'</d7p1:Value>
-                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
-                          <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
                       </d8p1:list>
                     </d7p1:Attributes>
@@ -985,7 +982,7 @@
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>3</d7p1:Value>
+                          <d7p1:Value>1</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -1001,7 +998,7 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'product-prices-actions'</d7p1:Value>
+                          <d7p1:Value>'product-grid'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -1020,7 +1017,7 @@
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:Value>2</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -1036,7 +1033,7 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value>'prices-variants ng-star-inserted'</d7p1:Value>
+                          <d7p1:Value>'info'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -1048,15 +1045,14 @@
                   <d7p1:XPathNode z:Id="i125">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
-                      <d11p1:string>and</d11p1:string>
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
                         <d7p1:XPathAttribute z:Id="i126">
-                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
-                          <d7p1:Value i:nil="true" />
+                          <d7p1:Value>3</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
@@ -1072,11 +1068,82 @@
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'product-prices-actions'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i129">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i130">
+                          <d7p1:IsEnabled>true</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>1</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i131">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>''</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i132">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>'prices-variants ng-star-inserted'</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>class</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                      </d8p1:list>
+                    </d7p1:Attributes>
+                    <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                    <d7p1:Name>div</d7p1:Name>
+                  </d7p1:XPathNode>
+                  <d7p1:XPathNode z:Id="i133">
+                    <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                      <d11p1:string>and</d11p1:string>
+                      <d11p1:string>and</d11p1:string>
+                    </d7p1:AttributeOperators>
+                    <d7p1:Attributes>
+                      <d8p1:list>
+                        <d7p1:XPathAttribute z:Id="i134">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value i:nil="true" />
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name></d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i135">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
+                          <d7p1:Value>''</d7p1:Value>
+                          <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
+                          <d7p1:_name>_ngcontent-rg-shop-ngx-c84</d7p1:_name>
+                        </d7p1:XPathAttribute>
+                        <d7p1:XPathAttribute z:Id="i136">
+                          <d7p1:IsEnabled>false</d7p1:IsEnabled>
+                          <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
+                          <d7p1:Operator>Equal</d7p1:Operator>
                           <d7p1:Value>'my-5 sm:my-0 lg:my-5 pr-0 xl:pr-80 ng-star-inserted'</d7p1:Value>
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i129">
+                        <d7p1:XPathAttribute z:Id="i137">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -1089,13 +1156,13 @@
                     <d7p1:IsEnabled>false</d7p1:IsEnabled>
                     <d7p1:Name>product-variant-selector</d7p1:Name>
                   </d7p1:XPathNode>
-                  <d7p1:XPathNode z:Id="i130">
+                  <d7p1:XPathNode z:Id="i138">
                     <d7p1:AttributeOperators xmlns:d11p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                       <d11p1:string>and</d11p1:string>
                     </d7p1:AttributeOperators>
                     <d7p1:Attributes>
                       <d8p1:list>
-                        <d7p1:XPathAttribute z:Id="i131">
+                        <d7p1:XPathAttribute z:Id="i139">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>true</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -1103,7 +1170,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name></d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i132">
+                        <d7p1:XPathAttribute z:Id="i140">
                           <d7p1:IsEnabled>false</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -1111,7 +1178,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>_ngcontent-rg-shop-ngx-c74</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i133">
+                        <d7p1:XPathAttribute z:Id="i141">
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Equal</d7p1:Operator>
@@ -1119,7 +1186,7 @@
                           <d7p1:_isCSharpExpression>false</d7p1:_isCSharpExpression>
                           <d7p1:_name>class</d7p1:_name>
                         </d7p1:XPathAttribute>
-                        <d7p1:XPathAttribute z:Id="i134">
+                        <d7p1:XPathAttribute z:Id="i142">
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Contains</d7p1:Operator>
@@ -1137,14 +1204,14 @@
               <d7p1:ScreenShotBase64 i:nil="true" />
             </_xpathSettings>
           </PropertyValue>
-          <PropertyValue z:Id="i135">
+          <PropertyValue z:Id="i143">
             <PropertyName>Timeout</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>3</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i136">
+          <PropertyValue z:Id="i144">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>in_wb_rg</_expression>
@@ -1159,41 +1226,46 @@
         <Text>Есть ли другие цвета</Text>
         <_activityFullName>Activities.Web.ElementExist</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i137" i:type="ExecutedStep">
+      <AbstractStep z:Id="i145" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i138" i:type="ExecutedStep">
+          <AbstractStep z:Id="i146" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i139" i:type="ExecutedStep">
+              <AbstractStep z:Id="i147" i:type="ExecutedStep">
                 <Childs />
                 <Id>16ea2d15-28f2-4793-9407-0accd5ae8d60</Id>
-                <Parent z:Ref="i138" />
+                <Parent z:Ref="i146" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i140">
+                  <PropertyValue z:Id="i148">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@"RiveGauche\RiveGauche_HaveColor.pix"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i141">
+                  <PropertyValue z:Id="i149">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i142">
+                      <d11p1:ArgumentItem z:Id="i150">
                         <d11p1:ArgumentName>in_wb_rg</d11p1:ArgumentName>
                         <d11p1:Expression>in_wb_rg</d11p1:Expression>
                         <d11p1:Type>Web.Core.WebBrowser</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i143">
+                      <d11p1:ArgumentItem z:Id="i151">
                         <d11p1:ArgumentName>in_bool_IsColor</d11p1:ArgumentName>
                         <d11p1:Expression>bool_IsColor</d11p1:Expression>
                         <d11p1:Type>System.Boolean</d11p1:Type>
                       </d11p1:ArgumentItem>
+                      <d11p1:ArgumentItem z:Id="i152">
+                        <d11p1:ArgumentName>in_list_cities</d11p1:ArgumentName>
+                        <d11p1:Expression>list_cities</d11p1:Expression>
+                        <d11p1:Type>List&lt;System.String&gt;</d11p1:Type>
+                      </d11p1:ArgumentItem>
                     </_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i144">
+                  <PropertyValue z:Id="i153">
                     <PropertyName>Timeout</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -1208,37 +1280,42 @@
                 <Text>Для других цветов</Text>
                 <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i145" i:type="ExecutedStep">
+              <AbstractStep z:Id="i154" i:type="ExecutedStep">
                 <Childs />
                 <Id>05eb11d8-0657-461c-8379-1643665e1445</Id>
-                <Parent z:Ref="i138" />
+                <Parent z:Ref="i146" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i146">
+                  <PropertyValue z:Id="i155">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@"RiveGauche\RiveGauche_HaveVolume.pix"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i147">
+                  <PropertyValue z:Id="i156">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i148">
+                      <d11p1:ArgumentItem z:Id="i157">
                         <d11p1:ArgumentName>in_wb_rg</d11p1:ArgumentName>
                         <d11p1:Expression>in_wb_rg</d11p1:Expression>
                         <d11p1:Type>Web.Core.WebBrowser</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i149">
+                      <d11p1:ArgumentItem z:Id="i158">
                         <d11p1:ArgumentName>in_bool_IsVolume</d11p1:ArgumentName>
                         <d11p1:Expression>bool_IsVolume</d11p1:Expression>
                         <d11p1:Type>System.Boolean</d11p1:Type>
                       </d11p1:ArgumentItem>
+                      <d11p1:ArgumentItem z:Id="i159">
+                        <d11p1:ArgumentName>in_list_cities</d11p1:ArgumentName>
+                        <d11p1:Expression>list_cities</d11p1:Expression>
+                        <d11p1:Type>List&lt;System.String&gt;</d11p1:Type>
+                      </d11p1:ArgumentItem>
                     </_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i150">
+                  <PropertyValue z:Id="i160">
                     <PropertyName>Timeout</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -1255,7 +1332,7 @@
               </AbstractStep>
             </Childs>
             <Id>83b4e174-5dc4-4da8-baea-1e5d2e63c7e7</Id>
-            <Parent z:Ref="i137" />
+            <Parent z:Ref="i145" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <EnableStatus>true</EnableStatus>
@@ -1264,34 +1341,39 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i151" i:type="ExecutedStep">
+          <AbstractStep z:Id="i161" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i152" i:type="ExecutedStep">
+              <AbstractStep z:Id="i162" i:type="ExecutedStep">
                 <Childs />
                 <Id>9cc3cd54-f7e7-4d87-a0a2-9633d534d735</Id>
-                <Parent z:Ref="i151" />
+                <Parent z:Ref="i161" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i153">
+                  <PropertyValue z:Id="i163">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@"RiveGauche\RiveGauche_Nothing.pix"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i154">
+                  <PropertyValue z:Id="i164">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i155">
+                      <d11p1:ArgumentItem z:Id="i165">
                         <d11p1:ArgumentName>in_wb_rg</d11p1:ArgumentName>
                         <d11p1:Expression>in_wb_rg</d11p1:Expression>
                         <d11p1:Type>Web.Core.WebBrowser</d11p1:Type>
                       </d11p1:ArgumentItem>
+                      <d11p1:ArgumentItem z:Id="i166">
+                        <d11p1:ArgumentName>in_list_cities</d11p1:ArgumentName>
+                        <d11p1:Expression>list_cities</d11p1:Expression>
+                        <d11p1:Type>List&lt;System.String&gt;</d11p1:Type>
+                      </d11p1:ArgumentItem>
                     </_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i156">
+                  <PropertyValue z:Id="i167">
                     <PropertyName>Timeout</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -1308,7 +1390,7 @@
               </AbstractStep>
             </Childs>
             <Id>42d83004-1ec3-45df-a3a3-5fc2e00690bd</Id>
-            <Parent z:Ref="i137" />
+            <Parent z:Ref="i145" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <EnableStatus>true</EnableStatus>
@@ -1321,7 +1403,7 @@
         <Id>8dcc809a-837f-48fa-b1e9-9f4c10b435b7</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i157">
+          <PropertyValue z:Id="i168">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>bool_IsColor | bool_IsVolume</_expression>
@@ -1350,14 +1432,14 @@
   <Name>RiveGauche_GetDataFromProductPage.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i158">
+    <Parameter z:Id="i169">
       <DefaultValueExpression>"https://rivegauche.ru/product/tom-ford-oud-minerale-eau-de-parfum-50-1"</DefaultValueExpression>
       <Description></Description>
       <Name>in_str_href</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i159">
+    <Parameter z:Id="i170">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>in_wb_rg</Name>

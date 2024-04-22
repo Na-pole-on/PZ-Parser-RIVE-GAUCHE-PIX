@@ -99,6 +99,14 @@
       <IsMain>false</IsMain>
       <Path>Database\Database_AddAddresses.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i26">
+      <IsMain>false</IsMain>
+      <Path>Database_GetCity.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i27">
+      <IsMain>false</IsMain>
+      <Path>Database\Database_GetCity.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>ReFramework_2.0</Name>

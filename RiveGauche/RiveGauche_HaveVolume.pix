@@ -268,10 +268,15 @@
                             <d13p1:Expression>dt_address</d13p1:Expression>
                             <d13p1:Type>System.Data.DataTable</d13p1:Type>
                           </d13p1:ArgumentItem>
+                          <d13p1:ArgumentItem z:Id="i39">
+                            <d13p1:ArgumentName>in_list_cities</d13p1:ArgumentName>
+                            <d13p1:Expression>in_list_cities</d13p1:Expression>
+                            <d13p1:Type>List&lt;System.String&gt;</d13p1:Type>
+                          </d13p1:ArgumentItem>
                         </_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i39">
+                      <PropertyValue z:Id="i40">
                         <PropertyName>Timeout</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -286,29 +291,29 @@
                     <Text>Получение всех продуктов и адресов</Text>
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i40" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i41" i:type="ExecutedStep">
                     <Childs />
                     <Id>86de27be-3189-4dd3-b0e2-d0782b76a8b7</Id>
                     <Parent z:Ref="i23" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i41">
+                      <PropertyValue z:Id="i42">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"Database\Database_AddProduct.pix"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i42">
+                      <PropertyValue z:Id="i43">
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i43">
+                          <d13p1:ArgumentItem z:Id="i44">
                             <d13p1:ArgumentName>in_dt_product</d13p1:ArgumentName>
                             <d13p1:Expression>dt_product</d13p1:Expression>
                             <d13p1:Type>System.Data.DataTable</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i44">
+                          <d13p1:ArgumentItem z:Id="i45">
                             <d13p1:ArgumentName>out_int_idLastProduct</d13p1:ArgumentName>
                             <d13p1:Expression>int_idOfProduct</d13p1:Expression>
                             <d13p1:Type>System.Int32</d13p1:Type>
@@ -316,7 +321,7 @@
                         </_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i45">
+                      <PropertyValue z:Id="i46">
                         <PropertyName>Timeout</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -331,29 +336,29 @@
                     <Text>Добавляем продукт и получаем его id</Text>
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i46" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i47" i:type="ExecutedStep">
                     <Childs />
                     <Id>1323f8ca-a54d-4ecc-83c8-2936221487ec</Id>
                     <Parent z:Ref="i23" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i47">
+                      <PropertyValue z:Id="i48">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"Database\Database_AddAddresses.pix"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i48">
+                      <PropertyValue z:Id="i49">
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i49">
+                          <d13p1:ArgumentItem z:Id="i50">
                             <d13p1:ArgumentName>in_int_idOfProduct</d13p1:ArgumentName>
                             <d13p1:Expression>int_idOfProduct</d13p1:Expression>
                             <d13p1:Type>System.Int32</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i50">
+                          <d13p1:ArgumentItem z:Id="i51">
                             <d13p1:ArgumentName>in_dt_address</d13p1:ArgumentName>
                             <d13p1:Expression>dt_address</d13p1:Expression>
                             <d13p1:Type>System.Data.DataTable</d13p1:Type>
@@ -361,7 +366,7 @@
                         </_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i51">
+                      <PropertyValue z:Id="i52">
                         <PropertyName>Timeout</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -380,21 +385,21 @@
                 <Id>7c72c93e-8113-476c-826b-d71b7f0b8b9f</Id>
                 <Parent z:Ref="i13" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i52">
+                  <PropertyValue z:Id="i53">
                     <PropertyName>Collection</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>dt_volumes.Rows</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i53">
+                  <PropertyValue z:Id="i54">
                     <PropertyName>Iterator</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>row</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i54">
+                  <PropertyValue z:Id="i55">
                     <PropertyName>Counter</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression></_expression>
@@ -420,7 +425,7 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i55" i:type="ExecutedStep">
+          <AbstractStep z:Id="i56" i:type="ExecutedStep">
             <Childs />
             <Id>63f4e56e-f29f-4467-8710-70ba28246539</Id>
             <Parent z:Ref="i12" />
@@ -436,7 +441,7 @@
         <Id>1398bca3-dc6f-4ace-a28f-10215f575e87</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i56">
+          <PropertyValue z:Id="i57">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>in_bool_IsVolume</_expression>
@@ -465,19 +470,26 @@
   <Name>RiveGauche_HaveVolume.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i57">
+    <Parameter z:Id="i58">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>in_bool_IsVolume</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
-    <Parameter z:Id="i58">
+    <Parameter z:Id="i59">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>in_wb_rg</Name>
       <RunnerType>None</RunnerType>
       <TypeString>Web.Core.WebBrowser</TypeString>
+    </Parameter>
+    <Parameter z:Id="i60">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_list_cities</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
   </Params>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
